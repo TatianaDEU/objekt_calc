@@ -20,4 +20,8 @@
         }
         return res;
     }
-    console.log(calc(4, 5, 'sum'));
+    console.log(calc(4, 5, 'sum')); //9
+    console.log(calc(4, 5, 'sub')); //-1
+    console.log(calc(4, 5, 'mult')); //20
+    console.log(calc(4, 5, 'div')); // 0.8
+    console.log(calc(4, 0, 'mult'));
