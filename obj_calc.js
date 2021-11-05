@@ -4,7 +4,7 @@
         b = +b;
 
         function isValid(x) {
-            return x !== undefined && typeof(x) === 'number' && !isNaN(x);
+            return  typeof(x) === 'number' && !isNaN(x) && x !== undefined;
         }
 
         if (isValid(a) && isValid(b)) {
@@ -14,7 +14,7 @@
                 'mult': a * b,
                 'div': (b === 0 ? 'Fehler, Dividieren durch 0' : a / b),
             };
-            res = operators[method] !== undefined ? operators[method] : 'Fehler, kein Operator';
+            res = operators[method] !== '' ? operators[method] : 'Fehler, kein Operator';
         } else {
             res = 'Error: not valid'
         }
